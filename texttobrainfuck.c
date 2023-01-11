@@ -4,10 +4,12 @@
 int main(){
     char input;
     int intInput, intInput2, temp1 = 0, shortened;
+    int counter = 0;
     while(scanf("%c", &input) != EOF) {
         intInput = (int)input;
         intInput2 = intInput;
-        if (intInput < 10) {
+        counter++;
+        if (intInput < 10 && counter == 1) {
             printf("Invalid Input\n");
             break;
         }
